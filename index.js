@@ -53,7 +53,7 @@ bot.on("ready", async () => {
 bot.on("message", async message => {
   
  if(message.author.bot) return;	//message.channel.reply("Bot users are not allowed to use commands!");
- if(!message.content.startsWith(PREFIX)) return undefined;
+// if(!message.content.startsWith(PREFIX)) return undefined;
  if(message.channel.type === "dm") return message.author.send(":x: | Commands dont work in DM's. Try using it in a server.");
   
   let user = message.mentions.members.first() || message.author
@@ -61,6 +61,7 @@ bot.on("message", async message => {
   let messageArray = message.content.split(" ");
   let msg = messageArray[0];
   let prefix = "]";
+  if(!msg.content.startsWith(prefix)) return;
 //  let modR = "Moderator"; //mod role
  // let adminR = "Administrator";	
   let args = messageArray.slice(1);	
