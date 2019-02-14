@@ -70,7 +70,7 @@ bot.on("message", async message => {
  // const url = args[1];
   //const serverQueue = queue.get(message.guild.id);
   
-  let command = args.shift().toLowerCastoLowerCa
+  let command = args.shift();
   let commandFile = require(`./commands/${command}.js`);
   commandFile.run(bot, message, args);
 
