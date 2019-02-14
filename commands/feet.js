@@ -19,7 +19,7 @@ randomPuppy(subreddit).then(async url => {
                     await message.channel.send({
                             files: [{ 
                                   attachment: url, 
-                                  name: 'meme.png' 
+                                  name: 'Some nice feets ;)' 
                           }]           
                    }).then(() => message.channel.stopTyping()); 
     }).catch(err => console.error(err)); 
@@ -27,6 +27,6 @@ randomPuppy(subreddit).then(async url => {
 };
 
  module.exports.help = {
-           name: 'meme', 
-           aliases: ['memes']
+           name: 'feet', 
+           aliases: ['feets']
 } 
