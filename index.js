@@ -61,7 +61,7 @@ bot.on("message", async message => {
   let messageArray = message.content.split(" ");
   let msg = messageArray[0];
   let prefix = "]";
-  if(!msg.content.startsWith(prefix)) return;
+  //if(!msg.content.startsWith(prefix)) return;
 //  let modR = "Moderator"; //mod role
  // let adminR = "Administrator";	
   let args = messageArray.slice(1);	
