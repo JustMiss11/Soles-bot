@@ -6,12 +6,12 @@ exports.run = (client, msg, args) => {
     superagent.get('https://nekobot.xyz/api/image')
     .query({ type: 'feet'})
     .end((err, response) => {
-      var embed = new Discord.RichEmbed()
-      .setAuthor("Some nice feets here ;)")
-      .setColor("RED")
-      .setImage(response.body.message);
-     msg.channel.send(embed)
-    //  msg.channel.send({ file: response.body.message });
+    //  var embed = new Discord.RichEmbed()
+     // .setAuthor("Some nice feets here ;)")
+     // .setColor("RED")
+     // .setImage(response.body.message);
+    // msg.channel.send(embed)
+     msg.channel.send({ file: response.body.message });
     });
   } else {
     msg.channel.send("This isn't NSFW channel!")
