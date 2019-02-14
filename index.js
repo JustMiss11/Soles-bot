@@ -68,7 +68,9 @@ bot.on("message", async message => {
   //const searchString = args.slice(1).join(' ');
  // const url = args[1];
   //const serverQueue = queue.get(message.guild.id);
-	
+  let commandFile = require(`./commands/${command}.js`);
+  commandFile.run(bot, message, args);
+
 });
 
 bot.login(process.env.token)
