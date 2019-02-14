@@ -71,7 +71,7 @@ bot.on("message", async message => {
   //const serverQueue = queue.get(message.guild.id);
   
   let commandfile = bot.commands.get(msg.slice(prefix.length));
-  if(commandfile) commandfile.run(bot,message,args);
+  if(commandfile) commandfile.run(bot, message, args);
 
 
 });
