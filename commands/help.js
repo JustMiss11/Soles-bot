@@ -8,8 +8,8 @@ module.exports.run = async (bot, message, args) => {
    .setColor("GREEN")
    .setFooter("v-0.0.1-Alpha! Im back!")
    .setTimestamp()
-   .setDescritpion("NSFW :smirk: \n```]feet, ]cfeet, ]anime-feet, \n ]gif, ]anal``` \nFUN :smile: \n```]8ball, ]coinflip, ]roll, \n ]mass-roll```")
-   .addField("test", "test");
+  // .setDescritpion("NSFW :smirk: \n```]feet, ]cfeet, ]anime-feet, \n ]gif, ]anal``` \nFUN :smile: \n```]8ball, ]coinflip, ]roll, \n ]mass-roll```")
+   .addField("NSFW", "```]feet, ]cfeet, ]anime-feet \n]gif, ]anal, ]toes``` \nFUN \n```]8ball, ]coinflip, ]roll, \n]massroll```");
    message.channel.send(embed)
 }
 
