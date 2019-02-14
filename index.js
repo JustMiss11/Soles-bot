@@ -11,7 +11,7 @@ const Enmap = require('enmap');
 //const ytdl = require('ytdl-core');
 
 //const youtube = new YouTube(botconfig.GOOGLE_API_KEY);
-const PREFIX = botconfig.prefix;
+//const PREFIX = botconfig.prefix;
 
 //require("./eventHandler")(bot)
 
@@ -60,7 +60,7 @@ bot.on("message", async message => {
  // let bal = await db.fetch(`money_${user.id}`)
   let messageArray = message.content.split(" ");
   let msg = messageArray[0];
-//  let prefix = botconfig.prefix;
+  let prefix = "]";
 //  let modR = "Moderator"; //mod role
  // let adminR = "Administrator";	
   let args = messageArray.slice(1);	
