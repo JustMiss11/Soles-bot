@@ -30,7 +30,7 @@ bot.commands = new Discord.Collection();
     });
 });
 
-bot.on("ready", function => {
+bot.on("ready", async () => {
 	console.log(`${bot.user.username} is online`)
     // bot.user.setActivity("Hello", {type: "STREAMING", url:"https://twitch.tv/Strandable"});
 
