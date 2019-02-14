@@ -13,7 +13,7 @@ const Enmap = require('enmap');
 //const youtube = new YouTube(botconfig.GOOGLE_API_KEY);
 const PREFIX = botconfig.prefix;
 
-require("./util/eventHandler")(bot)
+require("eventHandler")(bot)
 
 fs.readdir("./commands/", (err, files) => {
 
