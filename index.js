@@ -41,7 +41,7 @@ bot.on("ready", function => {
         "Version: 0.0.1-alpha!", //Bots version!
         `over ${bot.users.size} users!` //shows how many users im managing!
     ]
-
+//reload ;)
     setInterval(function() {
         let status = statuses[Math.floor(Math.random() * statuses.length)];
         bot.user.setActivity(status, {type: "LISTENING"});
