@@ -4,8 +4,8 @@ module.exports.run = async (bot, message, args) => {
 
  let reddit = [
                       
-                 //RELOAD
-              //  Lol
+                 
+             
                        
                        "male-feet",
                        "female-feet", 
@@ -14,15 +14,15 @@ module.exports.run = async (bot, message, args) => {
 
 let subreddit = reddit[Math.floor(Math.random() * reddit.length)];
 
- message.channel.startTyping(); 
+  
 
 randomPuppy(subreddit).then(async url => {
                     await message.channel.send({
                             files: [{ 
                                   attachment: url, 
-                                  name: 'Some nice feets ;)' 
+                                  name: 'Some nice feets.png' 
                           }]           
-                   }).then(() => message.channel.stopTyping()); 
+                   })
     }).catch(err => console.error(err)); 
 
 };
