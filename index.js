@@ -17,6 +17,7 @@ const Enmap = require('enmap');
 
 
 bot.commands = new Discord.Collection();
+bot.aliases = new Discord.Collection();
 
   fs.readdir('./commands/', (err, files) => {
     if (err) console.error(err);
@@ -68,6 +69,8 @@ bot.on("message", async message => {
   //const searchString = args.slice(1).join(' ');
  // const url = args[1];
   //const serverQueue = queue.get(message.guild.id);
+  
+  let command = args.shift().toLowerCase();
   let commandFile = require(`./commands/${command}.js`);
   commandFile.run(bot, message, args);
 
