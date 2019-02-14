@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 //const ms = require("ms")
 
 module.exports.run = async (bot, message, args) => {
-   const embed = new Discord.RichEmbed()
+   var embed = new Discord.RichEmbed()
    .setAuthor("Help commands!")
    .setColor("GREEN")
    .setFooter("v-0.0.1-Alpha! Im back!")
@@ -15,5 +15,5 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
     name: "help",
-    aliases: []
+    aliases: ['h']
 }
