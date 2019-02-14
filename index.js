@@ -16,6 +16,7 @@ const PREFIX = botconfig.prefix;
 require("./eventHandler")(bot)
 
 
+bot.commands = new Discord.Collection();
 
   fs.readdir('./commands/', (err, files) => {
     if (err) console.error(err);
