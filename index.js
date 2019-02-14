@@ -13,7 +13,7 @@ const Enmap = require('enmap');
 //const youtube = new YouTube(botconfig.GOOGLE_API_KEY);
 const PREFIX = botconfig.prefix;
 
-require("./eventHandler")(bot)
+//require("./eventHandler")(bot)
 
 
 bot.commands = new Discord.Collection();
@@ -48,8 +48,8 @@ bot.on("ready", async () => {
         bot.user.setStatus("dnd"); //online, idle, dnd
     }, 5000)
 
-}
-}
+});
+
 bot.on("message", async message => {
   
  if(message.author.bot) return;	//message.channel.reply("Bot users are not allowed to use commands!");
