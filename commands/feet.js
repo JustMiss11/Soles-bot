@@ -4,7 +4,8 @@ module.exports.run = async (bot, message, args) => {
 
  let reddit = [
                       
-                       
+                 //RELOAD
+              //  Lol
                        
                        "male-feet",
                        "female-feet", 
