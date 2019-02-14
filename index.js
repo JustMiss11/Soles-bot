@@ -10,7 +10,7 @@ const Enmap = require('enmap');
 //lconst YouTube = require('simple-youtube-api');
 //const ytdl = require('ytdl-core');
 
-const youtube = new YouTube(botconfig.GOOGLE_API_KEY);
+//const youtube = new YouTube(botconfig.GOOGLE_API_KEY);
 const PREFIX = botconfig.prefix;
 
 require("./util/eventHandler")(bot)
