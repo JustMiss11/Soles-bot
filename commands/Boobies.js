@@ -26,9 +26,9 @@ module.exports.run = async (client, message) => {
             title: `No boobies for ${message.author.username} today :(`,
             description: `\`\`\`js\n${error}\`\`\``,
         })
-    }) //refresh :D
+    }) //whats wrong :thinking:
 };
 module.exports.help = {
-  name: 'boobies',
+  name: 'boobs',
   aliases: []
 }
