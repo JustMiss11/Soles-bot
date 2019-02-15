@@ -18,7 +18,8 @@ randomPuppy(subreddit).then(async url => {
                                   name: 'FEETS!.png' 
                           }]           
                    })//.then(() => message.channel.stopTyping()); 
-    }).catch(err => console.error(err)) && message.chsnnel.send("Something went wrong.. Try using it again. (Mind that this bot is in alpha.)"); 
+    }).catch(err => console.error(err)) 
+ if(err) message.chsnnel.send("Something went wrong.. Try using it again. (Mind that this bot is in alpha.)"); 
 
 };
 
