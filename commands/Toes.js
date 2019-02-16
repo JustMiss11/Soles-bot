@@ -1,4 +1,5 @@
 const randomPuppy = require('random-puppy'); 
+const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
@@ -9,8 +10,11 @@ module.exports.run = async (bot, message, args) => {
   ]
 
 let subreddit = reddit[Math.floor(Math.random() * reddit.length)];
+ if(err) => {
+  message.channel.send("I cant find this image. Im still in Alpha.")
+  console.log(err)
+ }
 
- message.channel.startTyping(); 
 
 randomPuppy(subreddit).then(async url => {
                     await message.channel.send({
@@ -18,7 +22,7 @@ randomPuppy(subreddit).then(async url => {
                                   attachment: url, 
                                   name: 'toes.png' 
                           }]           
-                   }).then(() => message.channel.stopTyping()); 
+                   }).then((
     }).catch(err => console.error(err)); 
 
 };
