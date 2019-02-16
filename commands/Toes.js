@@ -10,10 +10,7 @@ module.exports.run = async (bot, message, args) => {
   ]
 
 let subreddit = reddit[Math.floor(Math.random() * reddit.length)];
- if(err) => {
-  message.channel.send("I cant find this image. Im still in Alpha.")
-  console.log(err)
- }
+ 
 
 
 randomPuppy(subreddit).then(async url => {
@@ -23,7 +20,11 @@ randomPuppy(subreddit).then(async url => {
                                   name: 'toes.png' 
                           }]           
                    }).then((
-    }).catch(err => console.error(err)); 
+    }).catch(err => console.error(err));
+      if(err){
+        message.channel.send("I cant find this image. Im still in Alpha.");
+        console.log(err);
+      };
 
 };
 
